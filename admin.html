@@ -15,9 +15,9 @@
 					$.ajax({						
 						url:"http://119.23.31.72:8080/scratch/GetBookServlet",
 						type:"get",
-						dataType:"jsonp",
 						success:function(data)
 						{	
+							alert(data);
 							for(var i=0; i<data.length;i++)
 							{
 								var tr = '<tr>';
@@ -33,6 +33,7 @@
 						},
 						error:function(data)
 						{
+							alert(data);
 							alert("加载数据失败。");
 						}	
 					});
