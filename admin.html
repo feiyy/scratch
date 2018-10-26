@@ -16,7 +16,8 @@
 						url:"http://119.23.31.72:8080/scratch/GetBookServlet",
 						type:"get",
 						success:function(data)
-						{							
+						{	
+							console.log(data);
 							for(var i=0; i<data.length;i++)
 							{
 								var tr = '<tr>';
