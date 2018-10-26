@@ -17,12 +17,10 @@
 						type:"get",
 						dataType:"json",
 						success:function(data)
-						{	
-							
+						{							
 							for(var i=0; i<data.length;i++)
 							{
-								var tr = '<tr>';
-								tr+='<td>'+data[i].id+'</td>';
+								var tr = '<tr>';								
 								tr+='<td>'+data[i].tel+'</td>';
 								tr+='<td>'+data[i].name+'</td>';
 								tr+='<td>'+data[i].level+'</td>';
@@ -46,20 +44,11 @@
 		
 		<table id="tab" class="table">
 			<tr>
-				<th>ID</th>
-				<th>家长电话</th>
-				<th>学生姓名</th>
-				<th>学生年级</th>
+				<th>电话</th>
+				<th>姓名</th>
+				<th>年级</th>
 				<th>预约时间</th>
 			</tr>
-			<tr>
-				<td>ID</td>
-				<td>家长电话</td>
-				<td>学生姓名</td>
-				<td>学生年级</td>
-				<td>预约时间</td>
-			</tr>
-			
 		</table>
 		
 	</body>
