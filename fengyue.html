@@ -389,7 +389,7 @@
 					
 					$.ajax({
 						
-						url:"http://119.23.31.72:8080/fengyue/AddBookServlet",
+						url:"https://119.23.31.72:8443/fengyue/AddBookServlet",
 						type:"post",
 						data:{tel:$("#tel").val(),name:$("#name").val(),level:$("#level").val()},
 						success:function(data)
@@ -398,6 +398,7 @@
 						},
 						error:function(data)
 						{
+							alert(data);
 							alert("预约失败");
 						}	
 					});
